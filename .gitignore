@@ -1,0 +1,21 @@
+# local runtime
+.venv/
+__pycache__/
+*.py[cod]
+.env
+
+# node
+node_modules/
+
+# runtime state: the archive and the specimen are rebuilt from the generator
+data/ghosts.db
+data/ghosts.db-shm
+data/ghosts.db-wal
+data/repos/
+
+# editors / OS
+.DS_Store
+*.swp
+
+# The built frontend IS committed on purpose: a clone should run with Python
+# alone, even if npm is not installed. Rebuild it with `npm run build`.
